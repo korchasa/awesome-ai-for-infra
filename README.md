@@ -74,7 +74,7 @@ Table of Contents:
 - [scitix/siclaw](https://github.com/scitix/siclaw) (213 TypeScript) - Siclaw is an open-source AI agent designed for DevOps and SRE teams to perform read-only infrastructure diagnostics and root-cause analysis through deep investigation workflows.
 - [shaido987/riskloc](https://github.com/shaido987/riskloc) (137 Python) - RiskLoc is an AI-powered method for localizing multi-dimensional root causes in time-series data, identifying the specific dimensions and values contributing to anomalies.
 - [tangpan360/MicroRCA-Agent](https://github.com/tangpan360/MicroRCA-Agent) (250 Python) - MicroRCA-Agent is an LLM-agent-based solution for microservice root cause localization and fault analysis, processing multi-modal Log, Trace, and Metric data.
-- [Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre) (6918 Python) - OpenSRE is an open-source framework for building, training, and evaluating AI SRE agents specifically designed for incident investigation and response, running on your own infrastructure.
+- [Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre) (6919 Python) - OpenSRE is an open-source framework for building, training, and evaluating AI SRE agents specifically designed for incident investigation and response, running on your own infrastructure.
 
 ### Anomaly Detection
 
@@ -117,7 +117,7 @@ Table of Contents:
 ### Security Monitoring
 
 - [backbay-labs/clawdstrike](https://github.com/backbay-labs/clawdstrike) (283 TypeScript) - Clawdstrike is an AI-powered Endpoint Detection and Response (EDR) system providing policy enforcement, a signed audit chain, and threat detection for developer workstations and autonomous agent fl...
-- [beenuar/AiSOC](https://github.com/beenuar/AiSOC) (1373 Python) - AiSOC is an open-source, self-hostable AI-powered Security Operations Center that ingests, correlates, and investigates security events using AI, providing a transparent investigation ledger.
+- [beenuar/AiSOC](https://github.com/beenuar/AiSOC) (1375 Python) - AiSOC is an open-source, self-hostable AI-powered Security Operations Center that ingests, correlates, and investigates security events using AI, providing a transparent investigation ledger.
 
 ## AI for Cloud & Infrastructure
 
