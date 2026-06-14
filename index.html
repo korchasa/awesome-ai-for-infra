@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A curated list of awesome "AI for *Ops" software: using AI to run IT operations,
+DevOps, SRE and platform engineering — intelligent observability and monitoring,
+incident detection and root-cause analysis, automation and self-healing, AI for
+security operations, and AI for cloud and Kubernetes infrastructure.
+">
+    <meta name="keywords" content="AIOps, AI for DevOps, AI for SRE, Artificial Intelligence for IT Operations, Intelligent Operations, Predictive Monitoring, AI Monitoring, Incident Management, Root Cause Analysis, Self-Healing, AI SecOps, AI for Kubernetes, FinOps AI">
+    <meta name="author" content="Awesome AI for Infra Contributors">
+    <meta property="og:title" content="Awesome AI for Infra">
+    <meta property="og:description" content="A curated list of awesome "AI for *Ops" software: using AI to run IT operations,
+DevOps, SRE and platform engineering — intelligent observability and monitoring,
+incident detection and root-cause analysis, automation and self-healing, AI for
+security operations, and AI for cloud and Kubernetes infrastructure.
+">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ai-for-infra.korchasa.dev">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Awesome AI for Infra">
+    <meta name="twitter:description" content="A curated list of awesome "AI for *Ops" software: using AI to run IT operations,
+DevOps, SRE and platform engineering — intelligent observability and monitoring,
+incident detection and root-cause analysis, automation and self-healing, AI for
+security operations, and AI for cloud and Kubernetes infrastructure.
+">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- Favicon and mobile icons -->
+    <link rel="icon" href="https://ai-for-infra.korchasa.dev/favicon.ico" sizes="any">
+    <link rel="icon" href="https://ai-for-infra.korchasa.dev/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="https://ai-for-infra.korchasa.dev/apple-touch-icon.png">
+    <link rel="manifest" href="https://ai-for-infra.korchasa.dev/manifest.webmanifest">
+    <meta name="theme-color" content="#1f77b4">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <title>Awesome AI for Infra</title>
+    <style>
+        body {
+            font-family: 'JetBrains Mono', 'Roboto Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.8;
+            font-size: 16px;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            margin: 2rem 0 1.2rem;
+            font-weight: 600;
+            line-height: 1.4;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 1rem 0 2rem;
+            border-bottom: 2px solid #eaecef;
+            padding-bottom: 10px;
+        }
+        h2 {
+            font-size: 2em;
+            margin: 2.5rem 0 1.5rem;
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 8px;
+        }
+        h3 {
+            font-size: 1.25em;
+            margin: 2rem 0 1rem;
+        }
+        h4 {
+            font-size: 1em;
+            margin: 1.5rem 0 0.8rem;
+        }
+        p {
+            margin: 0 0 1.5rem;
+            max-width: 85ch;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0 0 2rem;
+        }
+        li {
+            margin: 1rem 0;
+            padding-left: 1em;
+            position: relative;
+            line-height: 1.6;
+        }
+        li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #0366d6;
+        }
+        a {
+            color: #1f77b4;
+            text-decoration: none;
+            border-bottom: 1px dotted transparent;
+            transition: border-color 0.2s ease;
+        }
+        a:hover {
+            border-bottom-color: #1f77b4;
+            text-decoration: none;
+        }
+        .note {
+            background-color: #e7f3fe;
+            border-left: 4px solid #007acc;
+            padding: 15px;
+            margin: 2.5rem 0;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+        .license {
+            margin-top: 4rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            padding: 1rem;
+            border-top: 1px solid #eee;
+        }
+        .stars {
+            color: #4d88ff;
+            font-weight: bold;
+            display: inline-block;
+            margin-right: 5px;
+            font-size: 0.9em;
+        }
+        .language {
+            color: #6a737d;
+            font-size: 0.9em;
+            display: inline-block;
+            margin-right: 8px;
+            margin-left: 3px;
+            background-color: #f1f1f1;
+            padding: 0.1rem 0.4rem;
+            border-radius: 3px;
+        }
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 40px 50px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        header, nav, main, footer {
+            margin-bottom: 3rem;
+            padding: 0 15px;
+        }
+        section {
+            padding-bottom: 1rem;
+        }
+        section + section {
+            border-top: 1px dashed #eee;
+            padding-top: 1.5rem;
+        }
+        /* More compact TOC */
+        nav ul li {
+            margin: 0.3rem 0;
+            font-size: 0.95em;
+            line-height: 1.4;
+        }
+        /* Nested TOC elements */
+        nav ul ul {
+            margin: 0.3rem 0 0.3rem 0.8rem;
+        }
+        /* Style for item count in TOC */
+        nav ul li span {
+            color: #666;
+            font-size: 0.85em;
+        }
+        main ul li:hover {
+            border-left-color: #007acc;
+            background: #f5f9ff;
+        }
+        /* Styles for static menu */
+        .main-menu {
+            margin-bottom: 1rem;
+        }
+        .main-menu ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 1rem;
+        }
+        .main-menu li {
+            margin: 0;
+        }
+        .main-menu a {
+            color: #0366d6;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .main-menu a:hover {
+            text-decoration: underline;
+        }
+        /* Styles for back to TOC link */
+        .back-to-toc {
+            text-align: right;
+            font-size: 0.85em;
+            margin-top: 1rem;
+        }
+        .back-to-toc a {
+            color: #0366d6;
+            text-decoration: none;
+        }
+        .back-to-toc a:hover {
+            text-decoration: underline;
+        }
+        /* Visually hidden (for accessibility) */
+        .visually-hidden {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0 0 0 0);
+            white-space: nowrap;
+            border: 0;
+        }
+    </style>
+
+    <!-- Schema.org markup for Google -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Awesome AI for Infra",
+        "description": "A curated list of awesome "AI for *Ops" software: using AI to run IT operations,
+DevOps, SRE and platform engineering — intelligent observability and monitoring,
+incident detection and root-cause analysis, automation and self-healing, AI for
+security operations, and AI for cloud and Kubernetes infrastructure.
+",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Awesome AI for Infra Contributors"
+        },
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "about": {
+            "@type": "ItemList",
+            "itemListElement": [
+                
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "AIOps Platforms & Frameworks"
+                },
+                
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Observability & Monitoring with AI"
+                },
+                
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Automation & Self-Healing"
+                },
+                
+                {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "AI for Security Operations (SecOps)"
+                },
+                
+                {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "name": "AI for Cloud & Infrastructure"
+                }
+                
+            ]
+        }
+    }
+    </script>
+    <script type="text/javascript">
+        (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "uxxtp3nqwl");
+    </script>
+</head>
+<body>
+    <div class="container">
+        <header role="banner">
+            <h1>Awesome AI for Infra</h1>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="https://github.com/korchasa/awesome-ai-for-infra">GitHub</a></li>
+                </ul>
+            </nav>
+            <div class="note" role="note" aria-label="Important note about this repository">
+                <strong>Note:</strong> This repository contains an automatically compiled list of frameworks, tools, and resources that use AI/ML to operate ordinary IT infrastructure — AIOps for DevOps, SRE and Platform Engineering (observability, incident management, automation/self-healing, SecOps, and cloud/Kubernetes operations).
+            </div>
+            <div>
+                A curated list of awesome "AI for *Ops" software: using AI to run IT operations,
+DevOps, SRE and platform engineering — intelligent observability and monitoring,
+incident detection and root-cause analysis, automation and self-healing, AI for
+security operations, and AI for cloud and Kubernetes infrastructure.
+
+            </div>
+
+            <!-- Site-wide search bar -->
+            <form id="search-form" role="search" aria-label="Search across projects" style="margin-top:1.5rem;">
+                <label for="search-input" class="visually-hidden">Search</label>
+                <input type="search" id="search-input" placeholder="Search projects…" style="width:100%;padding:0.6rem 1rem;font-size:1rem;border:1px solid #d1d5da;border-radius:4px;" autocomplete="off">
+            </form>
+            <div id="search-results" aria-live="polite" style="margin-top:1.5rem;"></div>
+        </header>
+
+        <nav role="navigation" aria-labelledby="toc-heading">
+            <h2 id="toc-heading">Table of Contents</h2><ul>
+                <li style="margin-left: 0px;">
+                    <a href="#aiops-platforms-&-frameworks" aria-label="Go to AIOps Platforms & Frameworks section">AIOps Platforms & Frameworks</a>
+                    <ul>
+                <li style="margin-left: 15px;">
+                    <a href="#full-stack-aiops-platforms" aria-label="Go to Full-Stack AIOps Platforms section">Full-Stack AIOps Platforms</a> <span aria-label="4 items">(4)</span>
+                </li>
+                <li style="margin-left: 15px;">
+                    <a href="#predictive-analytics-for-operations" aria-label="Go to Predictive Analytics for Operations section">Predictive Analytics for Operations</a> <span aria-label="1 items">(1)</span>
+                </li>
+                <li style="margin-left: 15px;">
+                    <a href="#incident-management-&-response" aria-label="Go to Incident Management & Response section">Incident Management & Response</a> <span aria-label="4 items">(4)</span>
+                </li>
+            </ul>
+                </li>
+                <li style="margin-left: 0px;">
+                    <a href="#observability-&-monitoring-with-ai" aria-label="Go to Observability & Monitoring with AI section">Observability & Monitoring with AI</a>
+                    <ul>
+                <li style="margin-left: 15px;">
+                    <a href="#log-analysis-&-intelligence" aria-label="Go to Log Analysis & Intelligence section">Log Analysis & Intelligence</a> <span aria-label="5 items">(5)</span>
+                </li>
+                <li style="margin-left: 15px;">
+                    <a href="#infrastructure-monitoring" aria-label="Go to Infrastructure Monitoring section">Infrastructure Monitoring</a> <span aria-label="1 items">(1)</span>
+                </li>
+                <li style="margin-left: 15px;">
+                    <a href="#root-cause-analysis" aria-label="Go to Root Cause Analysis section">Root Cause Analysis</a> <span aria-label="9 items">(9)</span>
+                </li>
+                <li style="margin-left: 15px;">
+                    <a href="#anomaly-detection" aria-label="Go to Anomaly Detection section">Anomaly Detection</a> <span aria-label="13 items">(13)</span>
+                </li>
+            </ul>
+                </li>
+                <li style="margin-left: 0px;">
+                    <a href="#automation-&-self-healing" aria-label="Go to Automation & Self-Healing section">Automation & Self-Healing</a>
+                    <ul>
+                <li style="margin-left: 15px;">
+                    <a href="#ai-powered-automation" aria-label="Go to AI-Powered Automation section">AI-Powered Automation</a> <span aria-label="4 items">(4)</span>
+                </li>
+                <li style="margin-left: 15px;">
+                    <a href="#chatops-&-ai-assistants-for-ops" aria-label="Go to ChatOps & AI Assistants for Ops section">ChatOps & AI Assistants for Ops</a> <span aria-label="3 items">(3)</span>
+                </li>
+            </ul>
+                </li>
+                <li style="margin-left: 0px;">
+                    <a href="#ai-for-security-operations-(secops)" aria-label="Go to AI for Security Operations (SecOps) section">AI for Security Operations (SecOps)</a>
+                    <ul>
+                <li style="margin-left: 15px;">
+                    <a href="#threat-intelligence" aria-label="Go to Threat Intelligence section">Threat Intelligence</a> <span aria-label="2 items">(2)</span>
+                </li>
+                <li style="margin-left: 15px;">
+                    <a href="#security-monitoring" aria-label="Go to Security Monitoring section">Security Monitoring</a> <span aria-label="2 items">(2)</span>
+                </li>
+            </ul>
+                </li>
+                <li style="margin-left: 0px;">
+                    <a href="#ai-for-cloud-&-infrastructure" aria-label="Go to AI for Cloud & Infrastructure section">AI for Cloud & Infrastructure</a>
+                    <ul>
+                <li style="margin-left: 15px;">
+                    <a href="#cloud-cost-optimization" aria-label="Go to Cloud Cost Optimization section">Cloud Cost Optimization</a> <span aria-label="3 items">(3)</span>
+                </li>
+                <li style="margin-left: 15px;">
+                    <a href="#container-&-kubernetes-intelligence" aria-label="Go to Container & Kubernetes Intelligence section">Container & Kubernetes Intelligence</a> <span aria-label="1 items">(1)</span>
+                </li>
+            </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main role="main">
+            <section aria-labelledby="aiops-platforms-&-frameworks">
+                <h2 id="aiops-platforms-&-frameworks">AIOps Platforms & Frameworks</h2>
+                
+            <section aria-labelledby="full-stack-aiops-platforms">
+                <h3 id="full-stack-aiops-platforms">Full-Stack AIOps Platforms</h3>
+                <ul aria-label="List of Full-Stack AIOps Platforms items">
+                    <li>
+                        <a href="https://github.com/alibaba/SREWorks" aria-label="alibaba/SREWorks - 1981 stars, Java" target="_blank" rel="noopener">alibaba/SREWorks</a>
+                        <span class="stars" aria-hidden="true">⭐ 1981</span>
+                        <span class="language" aria-hidden="true">Java</span> -
+                        <span>SREWorks is Alibaba Cloud's cloud-native AIOps and DataOps platform designed to enhance IT operation and maintenance through AI and big data.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/alibaba/UnifiedModel" aria-label="alibaba/UnifiedModel - 152 stars, Python" target="_blank" rel="noopener">alibaba/UnifiedModel</a>
+                        <span class="stars" aria-hidden="true">⭐ 152</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>UModel is a vendor-neutral semantic runtime that provides a unified object graph for enterprise AI agents, enabling them to understand and process fragmented IT operational data, services, and busi...</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/HoloInsight/holoinsight" aria-label="HoloInsight/holoinsight - 352 stars, Java" target="_blank" rel="noopener">HoloInsight/holoinsight</a>
+                        <span class="stars" aria-hidden="true">⭐ 352</span>
+                        <span class="language" aria-hidden="true">Java</span> -
+                        <span>HoloInsight is a cloud-native observability platform that emphasizes real-time log analysis and integrates AI for enhanced monitoring and insights.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/keephq/keep" aria-label="keephq/keep - 11922 stars, Python" target="_blank" rel="noopener">keephq/keep</a>
+                        <span class="stars" aria-hidden="true">⭐ 11922</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>Keep is an open-source AIOps and alert management platform that centralizes alerts, deduplicates, enriches, filters them, and correlates incidents using AI-powered automation and various backend in...</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+            </section>
+            <section aria-labelledby="predictive-analytics-for-operations">
+                <h3 id="predictive-analytics-for-operations">Predictive Analytics for Operations</h3>
+                <ul aria-label="List of Predictive Analytics for Operations items">
+                    <li>
+                        <a href="https://github.com/aqstack/sentinel" aria-label="aqstack/sentinel - 364 stars, Go" target="_blank" rel="noopener">aqstack/sentinel</a>
+                        <span class="stars" aria-hidden="true">⭐ 364</span>
+                        <span class="language" aria-hidden="true">Go</span> -
+                        <span>Sentinel is a self-healing edge computing agent for Kubernetes, providing predictive failure detection and partition-resilient orchestration for edge nodes using lightweight statistical models.</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+            </section>
+            <section aria-labelledby="incident-management-&-response">
+                <h3 id="incident-management-&-response">Incident Management & Response</h3>
+                <ul aria-label="List of Incident Management & Response items">
+                    <li>
+                        <a href="https://github.com/Arvo-AI/aurora" aria-label="Arvo-AI/aurora - 292 stars, Python" target="_blank" rel="noopener">Arvo-AI/aurora</a>
+                        <span class="stars" aria-hidden="true">⭐ 292</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>Aurora is an open-source, AI-powered incident management platform that uses AI agents to autonomously investigate incidents, perform root cause analysis, and suggest remediations across multi-cloud...</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/ongridio/ongrid" aria-label="ongridio/ongrid - 235 stars, Go" target="_blank" rel="noopener">ongridio/ongrid</a>
+                        <span class="stars" aria-hidden="true">⭐ 235</span>
+                        <span class="language" aria-hidden="true">Go</span> -
+                        <span>Ongrid is an AI-powered ops agent that autonomously investigates alerts, performs root-cause analysis, and orchestrates fixes for IT infrastructure issues, interacting via chat platforms.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/papadopouloskyriakos/agentic-chatops" aria-label="papadopouloskyriakos/agentic-chatops - 105 stars, Python" target="_blank" rel="noopener">papadopouloskyriakos/agentic-chatops</a>
+                        <span class="stars" aria-hidden="true">⭐ 105</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>This project implements a multi-agent ChatOps system that uses AI/ML to autonomously triage, investigate, and propose fixes for infrastructure alerts, including self-improving prompts and a causal ...</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Tommy-yw/RunbookHermes" aria-label="Tommy-yw/RunbookHermes - 565 stars, Python" target="_blank" rel="noopener">Tommy-yw/RunbookHermes</a>
+                        <span class="stars" aria-hidden="true">⭐ 565</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>RunbookHermes is an AIOps agent built on the Hermes Agent framework, designed for evidence-driven incident response, approval-gated remediation, and self-evolving runbook learning.</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+            </section>
+            </section>
+            <section aria-labelledby="observability-&-monitoring-with-ai">
+                <h2 id="observability-&-monitoring-with-ai">Observability & Monitoring with AI</h2>
+                
+            <section aria-labelledby="log-analysis-&-intelligence">
+                <h3 id="log-analysis-&-intelligence">Log Analysis & Intelligence</h3>
+                <ul aria-label="List of Log Analysis & Intelligence items">
+                    <li>
+                        <a href="https://github.com/logpai/Drain3" aria-label="logpai/Drain3 - 821 stars, Python" target="_blank" rel="noopener">logpai/Drain3</a>
+                        <span class="stars" aria-hidden="true">⭐ 821</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>Drain3 is an online log template miner that extracts structured templates from raw log messages for enhanced observability and anomaly detection.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/logpai/Log3C" aria-label="logpai/Log3C - 175 stars, Python" target="_blank" rel="noopener">logpai/Log3C</a>
+                        <span class="stars" aria-hidden="true">⭐ 175</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>Log3C is a framework that identifies impactful service system problems by analyzing system logs and KPI metrics through a process of log parsing, sequence vectorization, cascading clustering, and c...</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/logpai/loglizer" aria-label="logpai/loglizer - 1416 stars, Jupyter Notebook" target="_blank" rel="noopener">logpai/loglizer</a>
+                        <span class="stars" aria-hidden="true">⭐ 1416</span>
+                        <span class="language" aria-hidden="true">Jupyter Notebook</span> -
+                        <span>Loglizer is an open-source machine learning toolkit designed for automated anomaly detection in system logs, supporting various supervised and unsupervised models.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/logpai/logparser" aria-label="logpai/logparser - 1978 stars, Python" target="_blank" rel="noopener">logpai/logparser</a>
+                        <span class="stars" aria-hidden="true">⭐ 1978</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>Logparser is a machine learning toolkit that provides automated log parsing and benchmarks for structured log analytics via event template extraction.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/salesforce/logai" aria-label="salesforce/logai - 810 stars, Python" target="_blank" rel="noopener">salesforce/logai</a>
+                        <span class="stars" aria-hidden="true">⭐ 810</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>LogAI is an open-source library that provides a comprehensive platform for log analytics and intelligence, including summarization, clustering, and anomaly detection.</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+            </section>
+            <section aria-labelledby="infrastructure-monitoring">
+                <h3 id="infrastructure-monitoring">Infrastructure Monitoring</h3>
+                <ul aria-label="List of Infrastructure Monitoring items">
+                    <li>
+                        <a href="https://github.com/linkedin/cruise-control" aria-label="linkedin/cruise-control - 3029 stars, Java" target="_blank" rel="noopener">linkedin/cruise-control</a>
+                        <span class="stars" aria-hidden="true">⭐ 3029</span>
+                        <span class="language" aria-hidden="true">Java</span> -
+                        <span>Cruise Control is a self-healing and workload rebalancing tool for Apache Kafka clusters, optimizing resource utilization and detecting anomalies to simplify large-scale operations.</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+            </section>
+            <section aria-labelledby="root-cause-analysis">
+                <h3 id="root-cause-analysis">Root Cause Analysis</h3>
+                <ul aria-label="List of Root Cause Analysis items">
+                    <li>
+                        <a href="https://github.com/cuebook/CueObserve" aria-label="cuebook/CueObserve - 236 stars, Python" target="_blank" rel="noopener">cuebook/CueObserve</a>
+                        <span class="stars" aria-hidden="true">⭐ 236</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>CueObserve is an open-source platform for time-series anomaly detection and root cause analysis directly on data warehouses, designed to monitor key metrics and identify causative factors.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/derisk-ai/OpenDerisk" aria-label="derisk-ai/OpenDerisk - 944 stars, Python" target="_blank" rel="noopener">derisk-ai/OpenDerisk</a>
+                        <span class="stars" aria-hidden="true">⭐ 944</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>OpenDeRisk is an AI-native risk intelligence system providing 24/7 comprehensive protection for application systems through multi-agent collaboration for deep root cause analysis.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/HolmesGPT/holmesgpt" aria-label="HolmesGPT/holmesgpt - 2623 stars, Python" target="_blank" rel="noopener">HolmesGPT/holmesgpt</a>
+                        <span class="stars" aria-hidden="true">⭐ 2623</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>HolmesGPT is an open-source AI agent for SRE that investigates production incidents, finds root causes, and can automatically identify and fix problems 24/7.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/kubeshark/kubeshark" aria-label="kubeshark/kubeshark - 11951 stars, Go" target="_blank" rel="noopener">kubeshark/kubeshark</a>
+                        <span class="stars" aria-hidden="true">⭐ 11951</span>
+                        <span class="language" aria-hidden="true">Go</span> -
+                        <span>Kubeshark provides eBPF-powered network observability for Kubernetes, indexing L4/L7 traffic with full K8s context and decrypting TLS, queryable by AI agents and humans.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/openrca/orca" aria-label="openrca/orca - 107 stars, Python" target="_blank" rel="noopener">openrca/orca</a>
+                        <span class="stars" aria-hidden="true">⭐ 107</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>OpenRCA provides automated root cause analysis for Kubernetes clusters by constructing a real-time topology graph enriched with telemetry data from various sources.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/scitix/siclaw" aria-label="scitix/siclaw - 213 stars, TypeScript" target="_blank" rel="noopener">scitix/siclaw</a>
+                        <span class="stars" aria-hidden="true">⭐ 213</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>Siclaw is an open-source AI agent designed for DevOps and SRE teams to perform read-only infrastructure diagnostics and root-cause analysis through deep investigation workflows.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/shaido987/riskloc" aria-label="shaido987/riskloc - 137 stars, Python" target="_blank" rel="noopener">shaido987/riskloc</a>
+                        <span class="stars" aria-hidden="true">⭐ 137</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>RiskLoc is an AI-powered method for localizing multi-dimensional root causes in time-series data, identifying the specific dimensions and values contributing to anomalies.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/tangpan360/MicroRCA-Agent" aria-label="tangpan360/MicroRCA-Agent - 250 stars, Python" target="_blank" rel="noopener">tangpan360/MicroRCA-Agent</a>
+                        <span class="stars" aria-hidden="true">⭐ 250</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>MicroRCA-Agent is an LLM-agent-based solution for microservice root cause localization and fault analysis, processing multi-modal Log, Trace, and Metric data.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Tracer-Cloud/opensre" aria-label="Tracer-Cloud/opensre - 6918 stars, Python" target="_blank" rel="noopener">Tracer-Cloud/opensre</a>
+                        <span class="stars" aria-hidden="true">⭐ 6918</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>OpenSRE is an open-source framework for building, training, and evaluating AI SRE agents specifically designed for incident investigation and response, running on your own infrastructure.</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+            </section>
+            <section aria-labelledby="anomaly-detection">
+                <h3 id="anomaly-detection">Anomaly Detection</h3>
+                <ul aria-label="List of Anomaly Detection items">
+                    <li>
+                        <a href="https://github.com/activecm/rita" aria-label="activecm/rita - 577 stars, Go" target="_blank" rel="noopener">activecm/rita</a>
+                        <span class="stars" aria-hidden="true">⭐ 577</span>
+                        <span class="language" aria-hidden="true">Go</span> -
+                        <span>RITA (Real Intelligence Threat Analytics) is an open-source framework that detects command and control (C2) communication by analyzing network traffic, identifying beaconing, long connections, DNS ...</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/d0ng1ee/logdeep" aria-label="d0ng1ee/logdeep - 459 stars, Python" target="_blank" rel="noopener">d0ng1ee/logdeep</a>
+                        <span class="stars" aria-hidden="true">⭐ 459</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>LogDeep is an open-source deep learning-based toolkit for automated log anomaly detection, implementing state-of-the-art models like DeepLog, LogAnomaly, and RobustLog.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/datamllab/tods" aria-label="datamllab/tods - 1661 stars, Python" target="_blank" rel="noopener">datamllab/tods</a>
+                        <span class="stars" aria-hidden="true">⭐ 1661</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>TODS is a comprehensive automated machine learning system for multivariate time-series outlier detection, providing modules for preprocessing, feature extraction, and a wide array of detection algo...</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/earthgecko/skyline" aria-label="earthgecko/skyline - 585 stars, Python" target="_blank" rel="noopener">earthgecko/skyline</a>
+                        <span class="stars" aria-hidden="true">⭐ 585</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>Skyline is a real-time anomaly detection and time series analysis system designed for passive monitoring of numerous high-resolution metrics without pre-configured models or thresholds.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/jixinpu/aiopstools" aria-label="jixinpu/aiopstools - 400 stars, Python" target="_blank" rel="noopener">jixinpu/aiopstools</a>
+                        <span class="stars" aria-hidden="true">⭐ 400</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>AIopstools is a Python toolkit offering fundamental AI-driven functionalities for IT operations, including anomaly detection, alarm convergence, time series forecasting, and alarm association analy...</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/khundman/telemanom" aria-label="khundman/telemanom - 1169 stars, Jupyter Notebook" target="_blank" rel="noopener">khundman/telemanom</a>
+                        <span class="stars" aria-hidden="true">⭐ 1169</span>
+                        <span class="language" aria-hidden="true">Jupyter Notebook</span> -
+                        <span>Telemanom is a framework using LSTMs and automatic thresholding for unsupervised anomaly detection in multivariate time series data, originally developed for spacecraft telemetry.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/kLabUM/rrcf" aria-label="kLabUM/rrcf - 523 stars, Python" target="_blank" rel="noopener">kLabUM/rrcf</a>
+                        <span class="stars" aria-hidden="true">⭐ 523</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>rrcf provides a Python implementation of the Robust Random Cut Forest algorithm for anomaly detection on streaming data, designed for high-dimensional datasets.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/MentatInnovations/datastream.io" aria-label="MentatInnovations/datastream.io - 915 stars, Python" target="_blank" rel="noopener">MentatInnovations/datastream.io</a>
+                        <span class="stars" aria-hidden="true">⭐ 915</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>datastream.io is an open-source framework for real-time anomaly detection in streaming data using Python, Elasticsearch, and Kibana.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/sintel-dev/Orion" aria-label="sintel-dev/Orion - 1358 stars, Python" target="_blank" rel="noopener">sintel-dev/Orion</a>
+                        <span class="stars" aria-hidden="true">⭐ 1358</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>Orion is an open-source machine learning library from MIT's Data to AI Lab, focused on unsupervised time series anomaly detection using various AI-driven pipelines.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Stream-AD/MIDAS" aria-label="Stream-AD/MIDAS - 775 stars, C++" target="_blank" rel="noopener">Stream-AD/MIDAS</a>
+                        <span class="stars" aria-hidden="true">⭐ 775</span>
+                        <span class="language" aria-hidden="true">C++</span> -
+                        <span>MIDAS is a C++ implementation for real-time anomaly detection in dynamic, time-evolving graphs, designed to identify intrusions, fraud, and fake rating anomalies with high accuracy and speed.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/xuhongzuo/DeepOD" aria-label="xuhongzuo/DeepOD - 579 stars, Python" target="_blank" rel="noopener">xuhongzuo/DeepOD</a>
+                        <span class="stars" aria-hidden="true">⭐ 579</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>DeepOD is an open-source Python library providing a unified API for 27 deep learning-based outlier and anomaly detection algorithms for tabular and time-series data.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/yzhao062/pyod" aria-label="yzhao062/pyod - 9876 stars, Python" target="_blank" rel="noopener">yzhao062/pyod</a>
+                        <span class="stars" aria-hidden="true">⭐ 9876</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>PyOD is a comprehensive Python library for multi-modal anomaly detection, offering 60+ detectors and an agentic workflow for AI agents to drive investigations across various data types.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/zillow/luminaire" aria-label="zillow/luminaire - 805 stars, Python" target="_blank" rel="noopener">zillow/luminaire</a>
+                        <span class="stars" aria-hidden="true">⭐ 805</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>Luminaire is a Python package from Zillow that provides ML-driven solutions for monitoring time series data through automated anomaly detection and forecasting.</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+            </section>
+            </section>
+            <section aria-labelledby="automation-&-self-healing">
+                <h2 id="automation-&-self-healing">Automation & Self-Healing</h2>
+                
+            <section aria-labelledby="ai-powered-automation">
+                <h3 id="ai-powered-automation">AI-Powered Automation</h3>
+                <ul aria-label="List of AI-Powered Automation items">
+                    <li>
+                        <a href="https://github.com/bgdnvk/clanker" aria-label="bgdnvk/clanker - 353 stars, Go" target="_blank" rel="noopener">bgdnvk/clanker</a>
+                        <span class="stars" aria-hidden="true">⭐ 353</span>
+                        <span class="language" aria-hidden="true">Go</span> -
+                        <span>Clanker is an AI-powered CLI agent designed for autonomous systems engineering across various cloud environments, enabling intelligent infrastructure operations and agent-human collaboration.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/bolivian-peru/os-moda" aria-label="bolivian-peru/os-moda - 104 stars, Rust" target="_blank" rel="noopener">bolivian-peru/os-moda</a>
+                        <span class="stars" aria-hidden="true">⭐ 104</span>
+                        <span class="language" aria-hidden="true">Rust</span> -
+                        <span>osModa is an AI-native operating system based on NixOS, allowing AI agents to manage server operations through typed, auditable tool access and atomic rollbacks.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/getsavvyinc/savvy-cli" aria-label="getsavvyinc/savvy-cli - 459 stars, Go" target="_blank" rel="noopener">getsavvyinc/savvy-cli</a>
+                        <span class="stars" aria-hidden="true">⭐ 459</span>
+                        <span class="language" aria-hidden="true">Go</span> -
+                        <span>Savvy is a CLI tool that uses AI to create, share, and run command-line workflows, leveraging natural language for automation and explanation of commands and error messages.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/microsoft/AIOpsLab" aria-label="microsoft/AIOpsLab - 894 stars, Python" target="_blank" rel="noopener">microsoft/AIOpsLab</a>
+                        <span class="stars" aria-hidden="true">⭐ 894</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>AIOpsLab is a comprehensive framework for designing, developing, and evaluating autonomous AIOps agents, providing reproducible and scalable benchmarks for AIOps solutions.</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+            </section>
+            <section aria-labelledby="chatops-&-ai-assistants-for-ops">
+                <h3 id="chatops-&-ai-assistants-for-ops">ChatOps & AI Assistants for Ops</h3>
+                <ul aria-label="List of ChatOps & AI Assistants for Ops items">
+                    <li>
+                        <a href="https://github.com/BUAADreamer/EasyRAG" aria-label="BUAADreamer/EasyRAG - 632 stars, Python" target="_blank" rel="noopener">BUAADreamer/EasyRAG</a>
+                        <span class="stars" aria-hidden="true">⭐ 632</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>EasyRAG is an efficient Retrieval-Augmented Generation (RAG) framework designed for automated network operations, achieving top results in the CCF AIOps International Challenge 2024.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Higangssh/homebutler" aria-label="Higangssh/homebutler - 161 stars, Go" target="_blank" rel="noopener">Higangssh/homebutler</a>
+                        <span class="stars" aria-hidden="true">⭐ 161</span>
+                        <span class="language" aria-hidden="true">Go</span> -
+                        <span>HomeButler is a homelab management tool that uses AI agents and structured interfaces to monitor, diagnose, and automate operations for self-hosted applications and services.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/WeOps-Lab/OpsPilot" aria-label="WeOps-Lab/OpsPilot - 192 stars, TypeScript" target="_blank" rel="noopener">WeOps-Lab/OpsPilot</a>
+                        <span class="stars" aria-hidden="true">⭐ 192</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>OpsPilot is an open-source intelligent operation and maintenance assistant that uses deep learning and LLM technology to link various O&M systems for enhanced capabilities.</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+            </section>
+            </section>
+            <section aria-labelledby="ai-for-security-operations-(secops)">
+                <h2 id="ai-for-security-operations-(secops)">AI for Security Operations (SecOps)</h2>
+                
+            <section aria-labelledby="threat-intelligence">
+                <h3 id="threat-intelligence">Threat Intelligence</h3>
+                <ul aria-label="List of Threat Intelligence items">
+                    <li>
+                        <a href="https://github.com/taranis-ai/taranis-ai" aria-label="taranis-ai/taranis-ai - 1145 stars, Python" target="_blank" rel="noopener">taranis-ai/taranis-ai</a>
+                        <span class="stars" aria-hidden="true">⭐ 1145</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>Taranis AI is an open-source intelligence (OSINT) tool that leverages AI and NLP to gather, analyze, and structure information from diverse sources for situational analysis and threat intelligence.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/thalesgroup-cert/Watcher" aria-label="thalesgroup-cert/Watcher - 1305 stars, JavaScript" target="_blank" rel="noopener">thalesgroup-cert/Watcher</a>
+                        <span class="stars" aria-hidden="true">⭐ 1305</span>
+                        <span class="language" aria-hidden="true">JavaScript</span> -
+                        <span>Watcher is an AI-powered open-source platform for cybersecurity threat intelligence and hunting, designed to discover and monitor emerging cyber threats.</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+            </section>
+            <section aria-labelledby="security-monitoring">
+                <h3 id="security-monitoring">Security Monitoring</h3>
+                <ul aria-label="List of Security Monitoring items">
+                    <li>
+                        <a href="https://github.com/backbay-labs/clawdstrike" aria-label="backbay-labs/clawdstrike - 283 stars, TypeScript" target="_blank" rel="noopener">backbay-labs/clawdstrike</a>
+                        <span class="stars" aria-hidden="true">⭐ 283</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>Clawdstrike is an AI-powered Endpoint Detection and Response (EDR) system providing policy enforcement, a signed audit chain, and threat detection for developer workstations and autonomous agent fl...</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/beenuar/AiSOC" aria-label="beenuar/AiSOC - 1373 stars, Python" target="_blank" rel="noopener">beenuar/AiSOC</a>
+                        <span class="stars" aria-hidden="true">⭐ 1373</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>AiSOC is an open-source, self-hostable AI-powered Security Operations Center that ingests, correlates, and investigates security events using AI, providing a transparent investigation ledger.</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+            </section>
+            </section>
+            <section aria-labelledby="ai-for-cloud-&-infrastructure">
+                <h2 id="ai-for-cloud-&-infrastructure">AI for Cloud & Infrastructure</h2>
+                
+            <section aria-labelledby="cloud-cost-optimization">
+                <h3 id="cloud-cost-optimization">Cloud Cost Optimization</h3>
+                <ul aria-label="List of Cloud Cost Optimization items">
+                    <li>
+                        <a href="https://github.com/infracost/infracost" aria-label="infracost/infracost - 12365 stars, Go" target="_blank" rel="noopener">infracost/infracost</a>
+                        <span class="stars" aria-hidden="true">⭐ 12365</span>
+                        <span class="language" aria-hidden="true">Go</span> -
+                        <span>Infracost provides cloud cost estimates and FinOps best practices for Infrastructure as Code (IaC) by integrating with CI/CD pipelines, IDEs, and AI coding agents to enable cost-aware development.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/openops-cloud/openops" aria-label="openops-cloud/openops - 1035 stars, TypeScript" target="_blank" rel="noopener">openops-cloud/openops</a>
+                        <span class="stars" aria-hidden="true">⭐ 1035</span>
+                        <span class="language" aria-hidden="true">TypeScript</span> -
+                        <span>OpenOps is a no-code FinOps automation platform that uses AI to optimize cloud costs and streamline financial operations through customizable workflows and integrations.</span>
+                    </li>
+                    <li>
+                        <a href="https://github.com/realopslabs/kubeledger" aria-label="realopslabs/kubeledger - 481 stars, Python" target="_blank" rel="noopener">realopslabs/kubeledger</a>
+                        <span class="stars" aria-hidden="true">⭐ 481</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>KubeLedger is a Kubernetes cost accounting system that tracks CPU, memory, and GPU usage per namespace, making hidden non-allocatable overhead visible for precise financial analysis and optimization.</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+            </section>
+            <section aria-labelledby="container-&-kubernetes-intelligence">
+                <h3 id="container-&-kubernetes-intelligence">Container & Kubernetes Intelligence</h3>
+                <ul aria-label="List of Container & Kubernetes Intelligence items">
+                    <li>
+                        <a href="https://github.com/aliyun/alibabacloud-ack-mcp-server" aria-label="aliyun/alibabacloud-ack-mcp-server - 112 stars, Python" target="_blank" rel="noopener">aliyun/alibabacloud-ack-mcp-server</a>
+                        <span class="stars" aria-hidden="true">⭐ 112</span>
+                        <span class="language" aria-hidden="true">Python</span> -
+                        <span>ACK MCP Server by Alibaba Cloud unifies container operations for AI assistants, enabling natural language interaction to manage Kubernetes resources, observability, and diagnostic tasks, facilitati...</span>
+                    </li>
+                </ul>
+                <p class="back-to-toc"><a href="#toc-heading">↑ Back to TOC</a></p>
+            </section>
+            </section>
+        </main>
+
+        <footer role="contentinfo">
+            <div class="license">
+                <h2 id="license">License</h2>
+                <a href="https://creativecommons.org/publicdomain/zero/1.0/" aria-label="Creative Commons Zero License">
+                    <img src="https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" alt="CC0 License" width="88" height="31" loading="lazy">
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Fuse.js library -->
+    <script src="https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.min.js"></script>
+
+    <!-- Client-side search powered by Fuse.js -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const input = document.getElementById('search-input');
+        if (!input || typeof Fuse === 'undefined') return;
+
+        // Build searchable index from catalog items
+        const items = Array.from(document.querySelectorAll('main li')).map(li => {
+            const anchor = li.querySelector('a');
+            const name = (anchor?.textContent || '').trim();
+
+            const description = (li.querySelector('span:last-of-type')?.textContent || '').trim();
+            const tags = (li.querySelector('.language')?.textContent || '').trim();
+            const category = (li.closest('section')?.querySelector('h2,h3,h4,h5,h6')?.textContent || '').trim();
+
+            return { li, name, category, tags, description };
+        });
+
+        const fuse = new Fuse(items, {
+            includeScore: true,
+            threshold: 0.4,
+            ignoreLocation: true,
+            keys: [
+                { name: 'name', weight: 0.4 },
+                { name: 'category', weight: 0.3 },
+                { name: 'tags', weight: 0.2 },
+                { name: 'description', weight: 0.1 }
+            ]
+        });
+
+        const resultsContainer = document.getElementById('search-results');
+
+        function renderResults(list) {
+            if (!resultsContainer) return;
+            if (!list.length) {
+                resultsContainer.innerHTML = '<p>No results found.</p>';
+                return;
+            }
+            const html = list.map(item => `<li>${item.li.innerHTML}</li>`).join('\n');
+            resultsContainer.innerHTML = `<h2 style=\"margin-top:0;\">Search Results</h2><ul>${html}</ul>`;
+        }
+
+        input.addEventListener('input', () => {
+            const query = input.value.trim();
+            if (!query) {
+                resultsContainer.innerHTML = '';
+                return;
+            }
+
+            const results = fuse.search(query).map(r => r.item);
+            renderResults(results);
+        });
+    });
+    </script>
+</body>
+</html>
