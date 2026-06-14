@@ -35,9 +35,9 @@ Table of Contents:
 ### Full-Stack AIOps Platforms
 
 - [alibaba/SREWorks](https://github.com/alibaba/SREWorks) (1981 Java) - SREWorks is Alibaba Cloud's cloud-native AIOps and DataOps platform designed to enhance IT operation and maintenance through AI and big data.
-- [alibaba/UnifiedModel](https://github.com/alibaba/UnifiedModel) (152 Python) - UModel is a vendor-neutral semantic runtime that provides a unified object graph for enterprise AI agents, enabling them to understand and process fragmented IT operational data, services, and busi...
+- [alibaba/UnifiedModel](https://github.com/alibaba/UnifiedModel) (153 Python) - UModel is a vendor-neutral semantic runtime that provides a unified object graph for enterprise AI agents, enabling them to understand and process fragmented IT operational data, services, and busi...
 - [HoloInsight/holoinsight](https://github.com/HoloInsight/holoinsight) (352 Java) - HoloInsight is a cloud-native observability platform that emphasizes real-time log analysis and integrates AI for enhanced monitoring and insights.
-- [keephq/keep](https://github.com/keephq/keep) (11922 Python) - Keep is an open-source AIOps and alert management platform that centralizes alerts, deduplicates, enriches, filters them, and correlates incidents using AI-powered automation and various backend in...
+- [keephq/keep](https://github.com/keephq/keep) (11923 Python) - Keep is an open-source AIOps and alert management platform that centralizes alerts, deduplicates, enriches, filters them, and correlates incidents using AI-powered automation and various backend in...
 
 ### Predictive Analytics for Operations
 
@@ -46,9 +46,9 @@ Table of Contents:
 ### Incident Management & Response
 
 - [Arvo-AI/aurora](https://github.com/Arvo-AI/aurora) (292 Python) - Aurora is an open-source, AI-powered incident management platform that uses AI agents to autonomously investigate incidents, perform root cause analysis, and suggest remediations across multi-cloud...
-- [ongridio/ongrid](https://github.com/ongridio/ongrid) (235 Go) - Ongrid is an AI-powered ops agent that autonomously investigates alerts, performs root-cause analysis, and orchestrates fixes for IT infrastructure issues, interacting via chat platforms.
+- [ongridio/ongrid](https://github.com/ongridio/ongrid) (237 Go) - Ongrid is an AI-powered ops agent that autonomously investigates alerts, performs root-cause analysis, and orchestrates fixes for IT infrastructure issues, interacting via chat platforms.
 - [papadopouloskyriakos/agentic-chatops](https://github.com/papadopouloskyriakos/agentic-chatops) (105 Python) - This project implements a multi-agent ChatOps system that uses AI/ML to autonomously triage, investigate, and propose fixes for infrastructure alerts, including self-improving prompts and a causal ...
-- [Tommy-yw/RunbookHermes](https://github.com/Tommy-yw/RunbookHermes) (565 Python) - RunbookHermes is an AIOps agent built on the Hermes Agent framework, designed for evidence-driven incident response, approval-gated remediation, and self-evolving runbook learning.
+- [Tommy-yw/RunbookHermes](https://github.com/Tommy-yw/RunbookHermes) (566 Python) - RunbookHermes is an AIOps agent built on the Hermes Agent framework, designed for evidence-driven incident response, approval-gated remediation, and self-evolving runbook learning.
 
 ## Observability & Monitoring with AI
 
@@ -68,13 +68,13 @@ Table of Contents:
 
 - [cuebook/CueObserve](https://github.com/cuebook/CueObserve) (236 Python) - CueObserve is an open-source platform for time-series anomaly detection and root cause analysis directly on data warehouses, designed to monitor key metrics and identify causative factors.
 - [derisk-ai/OpenDerisk](https://github.com/derisk-ai/OpenDerisk) (944 Python) - OpenDeRisk is an AI-native risk intelligence system providing 24/7 comprehensive protection for application systems through multi-agent collaboration for deep root cause analysis.
-- [HolmesGPT/holmesgpt](https://github.com/HolmesGPT/holmesgpt) (2623 Python) - HolmesGPT is an open-source AI agent for SRE that investigates production incidents, finds root causes, and can automatically identify and fix problems 24/7.
+- [HolmesGPT/holmesgpt](https://github.com/HolmesGPT/holmesgpt) (2625 Python) - HolmesGPT is an open-source AI agent for SRE that investigates production incidents, finds root causes, and can automatically identify and fix problems 24/7.
 - [kubeshark/kubeshark](https://github.com/kubeshark/kubeshark) (11951 Go) - Kubeshark provides eBPF-powered network observability for Kubernetes, indexing L4/L7 traffic with full K8s context and decrypting TLS, queryable by AI agents and humans.
 - [openrca/orca](https://github.com/openrca/orca) (107 Python) - OpenRCA provides automated root cause analysis for Kubernetes clusters by constructing a real-time topology graph enriched with telemetry data from various sources.
 - [scitix/siclaw](https://github.com/scitix/siclaw) (213 TypeScript) - Siclaw is an open-source AI agent designed for DevOps and SRE teams to perform read-only infrastructure diagnostics and root-cause analysis through deep investigation workflows.
 - [shaido987/riskloc](https://github.com/shaido987/riskloc) (137 Python) - RiskLoc is an AI-powered method for localizing multi-dimensional root causes in time-series data, identifying the specific dimensions and values contributing to anomalies.
 - [tangpan360/MicroRCA-Agent](https://github.com/tangpan360/MicroRCA-Agent) (250 Python) - MicroRCA-Agent is an LLM-agent-based solution for microservice root cause localization and fault analysis, processing multi-modal Log, Trace, and Metric data.
-- [Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre) (6919 Python) - OpenSRE is an open-source framework for building, training, and evaluating AI SRE agents specifically designed for incident investigation and response, running on your own infrastructure.
+- [Tracer-Cloud/opensre](https://github.com/Tracer-Cloud/opensre) (6930 Python) - OpenSRE is an open-source framework for building, training, and evaluating AI SRE agents specifically designed for incident investigation and response, running on your own infrastructure.
 
 ### Anomaly Detection
 
@@ -83,7 +83,7 @@ Table of Contents:
 - [datamllab/tods](https://github.com/datamllab/tods) (1661 Python) - TODS is a comprehensive automated machine learning system for multivariate time-series outlier detection, providing modules for preprocessing, feature extraction, and a wide array of detection algo...
 - [earthgecko/skyline](https://github.com/earthgecko/skyline) (585 Python) - Skyline is a real-time anomaly detection and time series analysis system designed for passive monitoring of numerous high-resolution metrics without pre-configured models or thresholds.
 - [jixinpu/aiopstools](https://github.com/jixinpu/aiopstools) (400 Python) - AIopstools is a Python toolkit offering fundamental AI-driven functionalities for IT operations, including anomaly detection, alarm convergence, time series forecasting, and alarm association analy...
-- [khundman/telemanom](https://github.com/khundman/telemanom) (1169 Jupyter Notebook) - Telemanom is a framework using LSTMs and automatic thresholding for unsupervised anomaly detection in multivariate time series data, originally developed for spacecraft telemetry.
+- [khundman/telemanom](https://github.com/khundman/telemanom) (1170 Jupyter Notebook) - Telemanom is a framework using LSTMs and automatic thresholding for unsupervised anomaly detection in multivariate time series data, originally developed for spacecraft telemetry.
 - [kLabUM/rrcf](https://github.com/kLabUM/rrcf) (523 Python) - rrcf provides a Python implementation of the Robust Random Cut Forest algorithm for anomaly detection on streaming data, designed for high-dimensional datasets.
 - [MentatInnovations/datastream.io](https://github.com/MentatInnovations/datastream.io) (915 Python) - datastream.io is an open-source framework for real-time anomaly detection in streaming data using Python, Elasticsearch, and Kibana.
 - [sintel-dev/Orion](https://github.com/sintel-dev/Orion) (1358 Python) - Orion is an open-source machine learning library from MIT's Data to AI Lab, focused on unsupervised time series anomaly detection using various AI-driven pipelines.
@@ -96,7 +96,7 @@ Table of Contents:
 
 ### AI-Powered Automation
 
-- [bgdnvk/clanker](https://github.com/bgdnvk/clanker) (353 Go) - Clanker is an AI-powered CLI agent designed for autonomous systems engineering across various cloud environments, enabling intelligent infrastructure operations and agent-human collaboration.
+- [bgdnvk/clanker](https://github.com/bgdnvk/clanker) (354 Go) - Clanker is an AI-powered CLI agent designed for autonomous systems engineering across various cloud environments, enabling intelligent infrastructure operations and agent-human collaboration.
 - [bolivian-peru/os-moda](https://github.com/bolivian-peru/os-moda) (104 Rust) - osModa is an AI-native operating system based on NixOS, allowing AI agents to manage server operations through typed, auditable tool access and atomic rollbacks.
 - [getsavvyinc/savvy-cli](https://github.com/getsavvyinc/savvy-cli) (459 Go) - Savvy is a CLI tool that uses AI to create, share, and run command-line workflows, leveraging natural language for automation and explanation of commands and error messages.
 - [microsoft/AIOpsLab](https://github.com/microsoft/AIOpsLab) (894 Python) - AIOpsLab is a comprehensive framework for designing, developing, and evaluating autonomous AIOps agents, providing reproducible and scalable benchmarks for AIOps solutions.
