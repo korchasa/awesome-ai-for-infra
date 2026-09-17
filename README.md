@@ -8,6 +8,10 @@ incident detection and root-cause analysis, automation and self-healing, AI for
 security operations, and AI for cloud and Kubernetes infrastructure.
 
 
+Read it as a website at [ai-for-infra.korchasa.dev](https://ai-for-infra.korchasa.dev/):
+every project has a page of its own, the weekly issues are archived, and
+[search](https://ai-for-infra.korchasa.dev/search/) looks through the whole list at once.
+
 Table of Contents:
 - [AIOps Platforms & Frameworks](#aiops-platforms-&-frameworks)
     - [Full-Stack AIOps Platforms](#full-stack-aiops-platforms) (8)
