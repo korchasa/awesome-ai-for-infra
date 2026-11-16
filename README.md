@@ -24,7 +24,6 @@ Table of Contents:
     - [Anomaly Detection](#anomaly-detection) (14)
 - [Automation & Self-Healing](#automation-&-self-healing)
     - [AI-Powered Automation](#ai-powered-automation) (7)
-    - [Self-Healing Systems](#self-healing-systems) (1)
     - [ChatOps & AI Assistants for Ops](#chatops-&-ai-assistants-for-ops) (4)
 - [AI for Security Operations (SecOps)](#ai-for-security-operations-(secops))
     - [Threat Intelligence](#threat-intelligence) (2)
@@ -117,10 +116,6 @@ Table of Contents:
 - [mezmo/aura](https://github.com/mezmo/aura) (413 Rust) - AURA is an agentic harness that enables Large Language Models (LLMs) to perform SRE work autonomously by providing critical guardrails, API servers, state management, and tool integrations for prod...
 - [microsoft/AIOpsLab](https://github.com/microsoft/AIOpsLab) (1034 Python) - AIOpsLab is a comprehensive framework for designing, developing, and evaluating autonomous AIOps agents, providing reproducible and scalable benchmarks for AIOps solutions.
 - [Vigil-SOC/vigil](https://github.com/Vigil-SOC/vigil) (442 Python) - Vigil is an open-source AI-driven Security Operations Center (SOC) platform leveraging specialized AI agents and customizable workflows for machine-speed network defense and incident response.
-
-### Self-Healing Systems
-
-- [dharmendradevops11/the-self-healing-pipeline](https://github.com/dharmendradevops11/the-self-healing-pipeline) (102 Python) - Reference implementation of an LLM-driven incident pipeline on AWS: a Sentry alert triggers root-cause diagnosis, a confidence and blast-radius gate, a tested fix on a branch and a pull request for human review.
 
 ### ChatOps & AI Assistants for Ops
 
